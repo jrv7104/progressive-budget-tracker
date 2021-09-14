@@ -12,7 +12,7 @@ const FILES_TO_CACHE = [
 
 self.addEventListener("install", function (evt) {
     evt.waitUntil(
-        caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/index.html"))
+        caches.open(DATA_CACHE_NAME).then((cache) => cache.add("/index.js"))
     );
 
     evt.waitUntil(
